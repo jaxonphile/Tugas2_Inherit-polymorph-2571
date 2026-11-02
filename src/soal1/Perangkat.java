@@ -12,6 +12,8 @@ public class Perangkat {
     protected double harga;
     private int garansiBulan;
 
+    public static final double TARIF_PAJAK = 0.10;
+
     /**
      * Method constructor unutk membuat objek dari kelas Perangkat
      * 
@@ -40,5 +42,9 @@ public class Perangkat {
      */
     public int getGaransiBulan() {
         return this.garansiBulan;
+    }
+
+    public int hitungPajak() {
+        return this.harga * TARIF_PAJAK;
     }
 }
