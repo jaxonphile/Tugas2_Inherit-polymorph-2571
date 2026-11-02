@@ -44,7 +44,7 @@ public class Perangkat {
         return this.garansiBulan;
     }
 
-    public int hitungPajak() {
+    public double hitungPajak() {
         return this.harga * TARIF_PAJAK;
     }
 }
