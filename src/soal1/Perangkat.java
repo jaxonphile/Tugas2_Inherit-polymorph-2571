@@ -12,4 +12,16 @@ public class Perangkat {
     protected double harga;
     private int garansiBulan;
 
+    /**
+     * Method constructor unutk membuat objek dari kelas Perangkat
+     * 
+     * @param merk
+     * @param harga
+     * @param garansiBulan
+     */
+    public Perangkat(String merk, double harga, int garansiBulan) {
+        this.merk = merk;
+        this.harga = harga;
+        this.garansiBulan = garansiBulan;
+    }
 }
