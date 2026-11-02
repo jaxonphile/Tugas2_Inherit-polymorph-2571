@@ -26,7 +26,7 @@ public class Perangkat {
     }
 
     /**
-     * Method getter untuk memberi informasi merk
+     * Method getter untuk mengembalikan nilai atribut merk
      * 
      * @return atribut merk
      */
@@ -35,7 +35,7 @@ public class Perangkat {
     }
     
     /**
-     * 
+     * Method getter untuk mengembalikan nilai atribut garansiBulan
      * @return atribut garansiBulan
      */
     public int getGaransiBulan() {
