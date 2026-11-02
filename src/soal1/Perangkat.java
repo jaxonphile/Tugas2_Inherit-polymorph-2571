@@ -1,3 +1,5 @@
+package soal1;
+
 /**
  * Kelas ini merupakan kelas superclass 
  * 
