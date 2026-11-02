@@ -28,9 +28,17 @@ public class Perangkat {
     /**
      * Method getter untuk memberi informasi merk
      * 
-     * @return
+     * @return atribut merk
      */
     public String getMerk() {
         return this.merk;
+    }
+    
+    /**
+     * 
+     * @return atribut garansiBulan
+     */
+    public int getGaransiBulan() {
+        return this.garansiBulan;
     }
 }
