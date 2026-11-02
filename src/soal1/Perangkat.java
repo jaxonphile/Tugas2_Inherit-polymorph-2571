@@ -44,6 +44,11 @@ public class Perangkat {
         return this.garansiBulan;
     }
 
+    /**
+     * Method hitungPajak untuk menghitung pajak dengan tarik sebesar 10%
+     * 
+     * @return nilai pajak dalam rupiah
+     */
     public double hitungPajak() {
         return this.harga * TARIF_PAJAK;
     }
