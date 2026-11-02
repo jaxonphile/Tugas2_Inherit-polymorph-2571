@@ -17,9 +17,9 @@ public class Perangkat {
     /**
      * Method constructor unutk membuat objek dari kelas Perangkat
      * 
-     * @param merk
-     * @param harga
-     * @param garansiBulan
+     * @param merk nama merek perangkat, tidak boleh kosong
+     * @param harga harga perangkat dalam Rupiah, wajib positif
+     * @param garansiBulan durasi garansi dalam bulan
      */
     public Perangkat(String merk, double harga, int garansiBulan) {
         this.merk = merk;
