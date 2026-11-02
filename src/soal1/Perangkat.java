@@ -24,4 +24,13 @@ public class Perangkat {
         this.harga = harga;
         this.garansiBulan = garansiBulan;
     }
+
+    /**
+     * Method getter untuk memberi informasi merk
+     * 
+     * @return
+     */
+    public String getMerk() {
+        return this.merk;
+    }
 }
