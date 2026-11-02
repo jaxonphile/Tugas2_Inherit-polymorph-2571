@@ -30,7 +30,7 @@ public class Perangkat {
     /**
      * Method getter untuk mengembalikan nilai atribut merk
      * 
-     * @return atribut merk
+     * @return merek perangkat
      */
     public String getMerk() {
         return this.merk;
@@ -38,7 +38,8 @@ public class Perangkat {
     
     /**
      * Method getter untuk mengembalikan nilai atribut garansiBulan
-     * @return atribut garansiBulan
+     * 
+     * @return durasi garansi dalam bulan
      */
     public int getGaransiBulan() {
         return this.garansiBulan;
