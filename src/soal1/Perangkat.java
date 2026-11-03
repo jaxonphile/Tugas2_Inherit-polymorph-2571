@@ -14,6 +14,7 @@ public class Perangkat {
     protected double harga;
     private int garansiBulan;
 
+    // Atribut FINAL
     public static final double TARIF_PAJAK = 0.10;
 
     /**
@@ -24,6 +25,12 @@ public class Perangkat {
      * @param garansiBulan durasi garansi dalam bulan
      */
     public Perangkat(String merk, double harga, int garansiBulan) {
+        if (merk == null || merk.trim().isEmpty()) {
+            throw new IllegalArgumentException("Merk tidak boleh kosong");
+        }
+        if (harga < 0) {
+            throw new IllegalArgumentException("Harga tidak boleh negatif.");
+        }
         this.merk = merk;
         this.harga = harga;
         this.garansiBulan = garansiBulan;
