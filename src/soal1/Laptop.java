@@ -25,4 +25,9 @@ public class Laptop extends Perangkat{
         this.ramGb = ramGb;
         this.ukuranLayarInci = ukuranLayarInci;
     }
+
+    public double hitungHargaPromo(double diskonPersen) {
+        return this.harga - (this.harga * (diskonPersen / 100.0));
+    }
+    
 }
