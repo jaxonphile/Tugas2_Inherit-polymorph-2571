@@ -26,8 +26,14 @@ public class Laptop extends Perangkat{
         this.ukuranLayarInci = ukuranLayarInci;
     }
 
+    /**
+     * Menghitung harga laptop setelah diskon promo.
+     * Mengakses atribut protected 'harga' milik Perangkat secara langsung.
+     * 
+     * @param diskonPersen persentase diskonn promo
+     * @return harga setelah diskon
+     */
     public double hitungHargaPromo(double diskonPersen) {
         return this.harga - (this.harga * (diskonPersen / 100.0));
     }
-    
 }
