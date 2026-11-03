@@ -62,4 +62,13 @@ public class Perangkat {
     public double hitungPajak() {
         return this.harga * TARIF_PAJAK;
     }
+
+    /**
+     * Mengembalikan informasi singkat perangkat
+     * 
+     * @return format singkat string "merek garansi X bulan"
+     */
+    public String infoSingkat() {
+        return this.merk + " garansi " + this.garansiBulan + " bulan";
+    }
 }
