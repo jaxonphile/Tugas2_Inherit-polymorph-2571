@@ -10,7 +10,7 @@ package soal1;
 
 public class Perangkat {
     // atribut 
-    private String merk;
+    private String merek;
     protected double harga;
     private int garansiBulan;
 
@@ -31,7 +31,7 @@ public class Perangkat {
         if (harga < 0) {
             throw new IllegalArgumentException("Harga tidak boleh negatif.");
         }
-        this.merk = merk;
+        this.merek = merk;
         this.harga = harga;
         this.garansiBulan = garansiBulan;
     }
@@ -42,7 +42,7 @@ public class Perangkat {
      * @return merek perangkat
      */
     public String getMerk() {
-        return this.merk;
+        return this.merek;
     }
     
     /**
@@ -69,6 +69,6 @@ public class Perangkat {
      * @return format singkat string "merek garansi X bulan"
      */
     public String infoSingkat() {
-        return this.merk + " garansi " + this.garansiBulan + " bulan";
+        return this.merek + " garansi " + this.garansiBulan + " bulan";
     }
 }
