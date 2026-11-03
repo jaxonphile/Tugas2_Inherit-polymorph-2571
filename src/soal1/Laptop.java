@@ -36,4 +36,9 @@ public class Laptop extends Perangkat{
     public double hitungHargaPromo(double diskonPersen) {
         return this.harga - (this.harga * (diskonPersen / 100.0));
     }
+
+    @Override 
+    public String infoSingkat() {
+        return super.infoSingkat() + " | RAM " + this.ramGb + " GB | layar " + this.ukuranLayarInci + " inci";
+    }
 }
