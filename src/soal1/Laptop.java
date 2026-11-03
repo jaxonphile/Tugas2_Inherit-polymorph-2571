@@ -1,7 +1,7 @@
 package soal1;
 
 /**
- * kelas ini merupakan blueprint untuk objek Laptop
+ * kelas ini merupakan child dari kelas Perangkat
  * 
  * @author Arienal Zacky Irfan
  * @version 1.0
@@ -30,7 +30,7 @@ public class Laptop extends Perangkat{
      * Menghitung harga laptop setelah diskon promo.
      * Mengakses atribut protected 'harga' milik Perangkat secara langsung.
      * 
-     * @param diskonPersen persentase diskonn promo
+     * @param diskonPersen persentase diskon promo
      * @return harga setelah diskon
      */
     public double hitungHargaPromo(double diskonPersen) {
