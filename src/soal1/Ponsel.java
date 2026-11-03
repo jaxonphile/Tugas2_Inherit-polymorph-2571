@@ -17,12 +17,17 @@ public class Ponsel extends Perangkat {
      * @param merk merk Ponsel
      * @param harga harga ponsel
      * @param garansiBulan durasi garansi dalam bulan
-     * @param kapasitasGb kapasitas dalam Gb
+     * @param kapasitasGb kapasitas storage dalam GB
      * @param jumlahKamera jumlah kamera
      */
     public Ponsel(String merk, double harga, int garansiBulan, int kapasitasGb, int jumlahKamera) {
         super(merk, harga, garansiBulan);
         this.kapasitasGb = kapasitasGb;
         this.jumlahKamera = jumlahKamera;
+    }
+
+    @Override 
+    public String infoSingkat() {
+        return super.infoSingkat() + " | Storage " + this.kapasitasGb + "GB | Jumlah Kamera: " + this.jumlahKamera;
     }
 }
