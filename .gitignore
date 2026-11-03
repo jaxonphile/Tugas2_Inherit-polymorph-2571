@@ -1,0 +1,16 @@
+# Mengabaikan file kompilasi Java
+*.class
+
+# Mengabaikan folder build IDE / Build tools
+out/
+target/
+*.idea/
+*.iml
+*.xml
+
+# VS Code project files
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
