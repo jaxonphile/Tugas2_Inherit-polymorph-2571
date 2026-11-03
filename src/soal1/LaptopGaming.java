@@ -14,4 +14,9 @@ public class LaptopGaming extends Laptop {
         super(merk, harga, garansiBulan, ramGb, ukuranLayarInci);
         this.kartuGrafis = kartuGrafis;
     }
+
+    @Override 
+    public String infoSingkat() {
+        return super.infoSingkat() + " | GPU " + this.kartuGrafis;
+    }
 }
