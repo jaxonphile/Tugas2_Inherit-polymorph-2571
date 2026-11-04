@@ -12,4 +12,11 @@ public class Hewan {
         this.nama = nama;
         System.out.println("Hewan dibuat: " + this.nama);
     }
+
+    /**
+     * Method untuk mengeluarkan suara secara umum.
+     */
+    void suara() {
+        System.out.println("...");
+    }
 }
