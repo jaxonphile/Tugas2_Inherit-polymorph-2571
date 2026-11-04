@@ -66,5 +66,10 @@ public class Titik {
         this.y = y;
     }
 
-    
+    /**
+     * Menampilkan koordinat
+     */
+    public void cetak() {
+        System.out.println("Titik: (" + this.x + ", " + ")");
+    }
 }
