@@ -39,4 +39,14 @@ public class Titik {
         return x;
     }
 
+    /**
+     * setter untuk assign nilai koordinat x
+     * 
+     * @param x nilai koordinat x
+     */
+    public void setX(double x) {
+        this.x = x;
+    }
+
+    
 }
