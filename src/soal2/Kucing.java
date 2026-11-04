@@ -28,6 +28,6 @@ class Kucing extends Hewan {
      * Method khusus yang hanya dimiliki oleh kelas Kucing.
      */
     void panjat() {
-        System.out.println(nama + "memanjat");
+        System.out.println(nama + " memanjat");
     }
 }
