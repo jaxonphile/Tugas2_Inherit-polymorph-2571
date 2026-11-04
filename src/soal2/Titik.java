@@ -8,6 +8,13 @@ package soal2;
  * @since 2026
  */
 public class Titik extends Lingkaran {
+
+    /**
+     * Constructor default tanpa parameter untuk memproses new Titik()
+     */
+    public Titik() {
+        super(0);
+    }
     
     /**
      * Constructor Titik. Nilai jari-jari diteruskan ke superclass (biasanya 0).
