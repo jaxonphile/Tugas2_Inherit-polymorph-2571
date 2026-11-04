@@ -57,4 +57,14 @@ public class Titik {
         return y;
     }
 
+    /**
+     * setter untuk assign nilai koordinat y
+     * 
+     * @param y
+     */
+    public void setY(double y) {
+        this.y = y;
+    }
+
+    
 }
