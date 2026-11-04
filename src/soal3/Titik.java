@@ -30,4 +30,13 @@ public class Titik {
         this.y = y;
     }
 
+    /**
+     * getter untuk mengembalikan nilai x
+     * 
+     * @return
+     */
+    public double getX() {
+        return x;
+    }
+
 }
