@@ -19,4 +19,9 @@ public class Hewan {
     void suara() {
         System.out.println("...");
     }
+
+    void makan() {
+        System.out.println(this.nama + " makan");
+        suara();
+    }
 }
