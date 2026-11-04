@@ -27,6 +27,9 @@ class Hewan {
         System.out.println("...");
     }
 
+    /**
+     * Method untuk mekanisme makan dan memanggil method suara().
+     */
     void makan() {
         System.out.println(this.nama + " makan");
         suara();
