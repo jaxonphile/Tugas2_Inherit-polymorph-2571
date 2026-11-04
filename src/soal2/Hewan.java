@@ -7,7 +7,7 @@ package soal2;
  * @version 1.0
  * @since 2026
  */
-public class Hewan {
+class Hewan {
     protected String nama;
 
     /**
@@ -15,7 +15,7 @@ public class Hewan {
      * 
      * @param nama nama hewan
      */
-    public Hewan(String nama) {
+    Hewan(String nama) {
         this.nama = nama;
         System.out.println("Hewan dibuat: " + this.nama);
     }
