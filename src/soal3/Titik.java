@@ -25,7 +25,7 @@ public class Titik {
      * @param x nilai koordinat x
      * @param y nilai koordinat y
      */
-    public Titik(int x, int y) {
+    public Titik(double x, double y) {
         this.x = x;
         this.y = y;
     }
