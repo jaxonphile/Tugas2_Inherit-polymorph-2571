@@ -11,7 +11,7 @@ public class TesSoal1 {
    public static void main(String[] args) {
         Laptop l = new Laptop("Asus", 8000000, 24, 16, 14.0);
         Ponsel p = new Ponsel("Samsung", 5000000, 12, 128, 3);
-        LaptopGaming g = new LaptopGaming("MSI", 15000000, 12, 13, 15.6, "RTX 4060");
+        LaptopGaming g = new LaptopGaming("MSI", 15000000, 12, 32, 15.6, "RTX 4060");
 
         System.out.println(l.infoSingkat());
         System.out.println(p.infoSingkat());
