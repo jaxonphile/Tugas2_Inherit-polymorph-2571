@@ -14,7 +14,7 @@ class Kucing extends Hewan {
      * 
      * @param nama nama kucing
      */
-    public Kucing(String nama) {
+    Kucing(String nama) {
         super(nama);
         System.out.println("Kucing dibuat");
     }
