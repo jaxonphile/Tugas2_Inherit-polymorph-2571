@@ -48,5 +48,13 @@ public class Titik {
         this.x = x;
     }
 
-    
+    /**
+     * getter untuk mengembalikan nilai y
+     * 
+     * @return
+     */
+    public double getY() {
+        return y;
+    }
+
 }
