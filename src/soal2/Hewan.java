@@ -1,5 +1,12 @@
 package soal2;
 
+/**
+ * Superclass Hewan untuk demonstrasi polimorfisme dan inheritance.
+ * 
+ * @author Arienal Zacky Irfan
+ * @version 1.0
+ * @since 2026
+ */
 public class Hewan {
     protected String nama;
 
