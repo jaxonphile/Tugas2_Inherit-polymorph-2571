@@ -35,4 +35,23 @@ public class ProdukDigital extends Produk {
         return ukuranMb;
     }
     
+    /**
+     * Menghitung harga akhir, yaitu harga dasar dikurangi diskon digital.
+     *
+     * @return harga dasar setelah diskon digital
+     */
+    @Override
+    public double hitungHargaAkhir() {
+        return getHargaDasar() - (getHargaDasar() * DISKON_DIGITAL);
+    }
+
+    /**
+     * Memberikan keterangan jenis dan ukuran produk digital.
+     *
+     * @return keterangan, misalnya "digital 20.0 MB"
+     */
+    @Override
+    public String deskripsi() {
+        return "digital " + ukuranMb + " MB";
+    }
 }
