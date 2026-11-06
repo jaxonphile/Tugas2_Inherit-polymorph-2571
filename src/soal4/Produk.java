@@ -35,4 +35,32 @@ public class Produk {
         this.nama = nama;
         this.hargaDasar = hargaDasar;
     }
+
+     /**
+     * Mengambil kode produk.
+     *
+     * @return kode produk
+     */
+    public String getKode() {
+        return kode;
+    }
+
+    /**
+     * Mengambil nama produk.
+     *
+     * @return nama produk
+     */
+    public String getNama() {
+        return nama;
+    }
+
+    /**
+     * Mengambil harga dasar produk sebelum aturan tambahan diterapkan.
+     *
+     * @return harga dasar produk
+     */
+    public double getHargaDasar() {
+        return hargaDasar;
+    }
+
 }
