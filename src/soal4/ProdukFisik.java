@@ -34,4 +34,25 @@ public class ProdukFisik extends Produk {
     public double getBeratKg() {
         return beratKg;
     }
+
+    /**
+     * Menghitung harga akhir, yaitu harga dasar ditambah ongkos kirim.
+     *
+     * @return harga dasar + (berat x ongkos kirim per kg)
+     */
+    @Override
+    public double hitungHargaAkhir() {
+        return getHargaDasar() + (beratKg * ONGKOS_KIRIM_PER_KG);
+    }
+
+    /**
+     * Memberikan keterangan jenis dan berat produk fisik.
+     *
+     * @return keterangan, misalnya "fisik 1.5 kg"
+     */
+    @Override
+    public String deskripsi() {
+        return "fisik " + beratKg + " kg";
+    }
+
 }
