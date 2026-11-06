@@ -5,6 +5,10 @@ import java.util.ArrayList;
 /**
  * Merepresentasikan keranjang belanja yang menyimpan daftar produk (composition).
  * Perhitungan total dan struk bergantung pada polimorfisme, bukan pengecekan tipe.
+ * 
+ * @author Arienal Zacky Irfan
+ * @version 1.0
+ * @since 202
  */
 public class Keranjang {
 
