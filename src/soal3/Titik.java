@@ -1,26 +1,25 @@
 package soal3;
 
 /**
- * Superclass Titik untuk merepresentasikan koordinat 2 dimensi (x, y).
+ * Kelas Titik untuk merepresentasikan koordinat 2D (x, y).
  * 
  * @author Arienal Zacky Irfan
  * @version 1.0
  * @since 2026
  */
 public class Titik {
-    double x;
-    double y;
+    private double x;
+    private double y;
 
     /**
-     * Constructor default untuk Titik (titik pusat 0,0).
+     * Constructor kosong yang menginisialisasi titik di (0.0, 0.0).
      */
     public Titik() {
-        this.x = 0;
-        this.y = 0;
+        this(0.0, 0.0);
     }
 
     /**
-     * Constructor dengan koordinat spesifik
+     * Constructor dengan nilai koordinat (x, y).
      * 
      * @param x nilai koordinat x
      * @param y nilai koordinat y
@@ -30,46 +29,37 @@ public class Titik {
         this.y = y;
     }
 
-    /**
-     * getter untuk mengembalikan nilai x
-     * 
-     * @return
-     */
+    // Getter dan Setter
     public double getX() {
         return x;
     }
 
-    /**
-     * setter untuk assign nilai koordinat x
-     * 
-     * @param x nilai koordinat x
-     */
     public void setX(double x) {
         this.x = x;
     }
 
-    /**
-     * getter untuk mengembalikan nilai y
-     * 
-     * @return
-     */
     public double getY() {
         return y;
     }
 
-    /**
-     * setter untuk assign nilai koordinat y
-     * 
-     * @param y
-     */
     public void setY(double y) {
         this.y = y;
     }
 
     /**
-     * Menampilkan koordinat
+     * Menghitung jarak Euclidean antara titik ini (this) dengan titik lain.
+     * 
+     * @param lain objek Titik tujuan
+     * @return jarak antara dua titik
      */
-    public void cetak() {
-        System.out.println("Titik: (" + this.x + ", " + ")");
+    public double jarakKe(Titik lain) {
+        double deltaX = lain.x - this.x;
+        double deltaY = lain.y - this.y;
+        return Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+    }
+
+    @Override
+    public String toString() {
+        return "(" + this.x + ", " + this.y + ")";
     }
 }
