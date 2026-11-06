@@ -2,6 +2,10 @@ package soal4;
 
 /**
  * Merepresentasikan produk digital yang mendapat diskon digital.
+ * 
+ * @author Arienal Zacky Irfan
+ * @version 1.0
+ * @since 202
  */
 public class ProdukDigital extends Produk {
 
