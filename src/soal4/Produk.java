@@ -63,4 +63,22 @@ public class Produk {
         return hargaDasar;
     }
 
+    /**
+     * Menghitung harga akhir produk. Pada produk umum, harga akhir sama
+     * dengan harga dasar. Subclass meng-override method ini sesuai aturannya.
+     *
+     * @return harga akhir produk
+     */
+    public double hitungHargaAkhir() {
+        return hargaDasar;
+    }
+
+    /**
+     * Memberikan keterangan jenis produk.
+     *
+     * @return keterangan jenis produk
+     */
+    public String deskripsi() {
+        return DESKRIPSI_UMUM;
+    }
 }
