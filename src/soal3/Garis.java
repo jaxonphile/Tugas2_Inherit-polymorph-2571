@@ -1,33 +1,69 @@
 package soal3;
 
-public class Garis extends Titik {
-    private Titik titikAkhir;
+/**
+ * Kelas Garis yang tersusun atas dua objek Titik (Composition).
+ * 
+ * @author Arienal Zacky Irfan
+ * @version 1.0
+ * @since 2026
+ */
+public class Garis {
+    private Titik awal;
+    private Titik akhir;
 
-    public Garis() {
-        super(0,0);
-        this.titikAkhir = new Titik(0.0, 0.0);
+    /**
+     * Constructor utama yang menerima dua objek Titik.
+     * Menggunakan defensive copy untuk mencegah aliasing dari luar.
+     * 
+     * @param awal titik awal garis
+     * @param akhir titik akhir garis
+     */
+    public Garis(Titik awal, Titik akhir) {
+        this.awal = new Titik(awal.getX(), awal.getY());
+        this.akhir = new Titik(akhir.getX(), akhir.getY());
     }
 
+    /**
+     * Constructor overload yang menerima nilai koordinat langsung.
+     * Memanggil constructor utama menggunakan this(...) sesuai ketentuan.
+     * 
+     * @param x1 koordinat x titik awal
+     * @param y1 koordinat y titik awal
+     * @param x2 koordinat x titik akhir
+     * @param y2 koordinat y titik akhir
+     */
     public Garis(double x1, double y1, double x2, double y2) {
-        super(x1, y1);
-        this.titikAkhir = new Titik(x2, y2);
+        this(new Titik(x1, y1), new Titik(x2, y2));
     }
 
-    public Garis(Titik tAwal, Titik tAkhir) {
-        super(tAwal.getX(), tAwal.getY());
-        this.titikAkhir = tAkhir;
+    // Getter dan Setter
+    public Titik getAwal() {
+        return new Titik(this.awal.getX(), this.awal.getY());
     }
 
-    public double hitungPanjang() {
-        double deltaX = this.titikAkhir.getX() - this.x;
-        double deltaY = this.titikAkhir.getY() - this.y;
-        return Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+    public void setAwal(Titik awal) {
+        this.awal = new Titik(awal.getX(), awal.getY());
     }
 
-    @Override 
-    public void cetak() {
-        System.out.println("Garis dari (" + this.x + ", " + this.y + ") ke (" 
-                           + this.titikAkhir.getX() + ", " + this.titikAkhir.getY() + ")");
-        System.out.printf("Panjang Garis: %.2f\n", hitungPanjang());
+    public Titik getAkhir() {
+        return new Titik(this.akhir.getX(), this.akhir.getY());
+    }
+
+    public void setAkhir(Titik akhir) {
+        this.akhir = new Titik(akhir.getX(), akhir.getY());
+    }
+
+    /**
+     * Menghitung panjang garis dengan mendelegasikan ke method jarakKe() milik kelas Titik.
+     * 
+     * @return panjang garis
+     */
+    public double getPanjang() {
+        return this.awal.jarakKe(this.akhir);
+    }
+
+    @Override
+    public String toString() {
+        return this.awal.toString() + "-" + this.akhir.toString();
     }
 }
