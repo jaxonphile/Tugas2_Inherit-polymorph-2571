@@ -4,6 +4,10 @@ package soal4;
  * Merepresentasikan produk langganan berbasis durasi bulan.
  * Langganan tidak memakai diskon digital, tetapi mendapat diskon
  * langganan jika durasinya mencapai batas minimal.
+ * 
+ * @author Arienal Zacky Irfan
+ * @version 1.0
+ * @since 202
  */
 public class Langganan extends ProdukDigital {
 
