@@ -26,5 +26,13 @@ public class ProdukDigital extends Produk {
         this.ukuranMb = ukuranMb;
     }
 
+    /**
+     * Mengambil ukuran produk.
+     *
+     * @return ukuran produk dalam megabyte
+     */
+    public double getUkuranMb() {
+        return ukuranMb;
+    }
     
 }
