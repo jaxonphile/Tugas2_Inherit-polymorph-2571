@@ -2,6 +2,10 @@ package soal4;
 
 /**
  * Merepresentasikan produk fisik yang dikenai ongkos kirim berdasarkan berat.
+ * 
+ * @author Arienal Zacky Irfan
+ * @version 1.0
+ * @since 202
  */
 public class ProdukFisik extends Produk {
 
