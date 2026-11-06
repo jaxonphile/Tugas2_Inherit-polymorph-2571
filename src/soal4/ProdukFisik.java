@@ -25,4 +25,13 @@ public class ProdukFisik extends Produk {
         }
         this.beratKg = beratKg;
     }
+
+    /**
+     * Mengambil berat produk.
+     *
+     * @return berat produk dalam kilogram
+     */
+    public double getBeratKg() {
+        return beratKg;
+    }
 }
