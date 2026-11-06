@@ -2,6 +2,10 @@ package soal4;
 
 /**
  * Kelas uji untuk Soal 4: Mini Project Toko Digital.
+ * 
+ * @author Arienal Zacky Irfan
+ * @version 1.0
+ * @since 202
  */
 public class TesSoal4 {
 
