@@ -4,6 +4,10 @@ package soal4;
  * Merepresentasikan produk umum yang dijual di toko digital.
  * Kelas ini menyimpan data dasar produk dan memastikan setiap nilai
  * yang disimpan lolos validasi.
+ * 
+ * @author Arienal Zacky Irfan
+ * @version 1.0
+ * @since 202
  */
 public class Produk {
 
